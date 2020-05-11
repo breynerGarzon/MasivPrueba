@@ -1,0 +1,36 @@
+//APIS PARA Ruletas
+
+#  POST http://localhost:8082/Ruleta/Crear
+
+# GET  http://localhost:8082/Ruleta/Obtener
+
+# PUT   https://localhost:5001/Ruleta/DesHabilitar/9
+
+# PUT  http://localhost:8082/Ruleta/Habilitar/1
+//APIS PARA CREAR APUESTAS
+
+POST http://localhost:8082/Apuesta/Crear
+idUsuario:1
+Content-Type: application/json
+
+{
+    "RuletaId": 1,
+    "ValorApuesta": 8500,
+    //"NumeroApuesta":2,
+    "ColorApuesta":1
+    //"ClienteId": 2
+}
+
+
+//APIS PARA Clientes
+
+# POST http://localhost:8082/Cliente/CrearCliente
+# Content-Type: application/json
+
+# {
+#     "Nombres": "Prueba",
+#     "Apellidos":"Pruebas ",
+#     "Saldo": 15000
+# }
+
+# Get https://localhost:5001/Cliente/ObtenerClientes

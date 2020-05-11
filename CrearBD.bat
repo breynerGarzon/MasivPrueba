@@ -1,0 +1,1 @@
+docker exec sqlserver /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P sql-passw0rd -d master -i script.sql
