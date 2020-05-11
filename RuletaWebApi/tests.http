@@ -4,7 +4,7 @@
 
 # GET  http://localhost:8082/Ruleta/Obtener
 
-# PUT   https://localhost:5001/Ruleta/DesHabilitar/9
+PUT   http://localhost:8082/Ruleta/DesHabilitar/1
 
 # PUT  http://localhost:8082/Ruleta/Habilitar/1
 //APIS PARA CREAR APUESTAS
@@ -18,7 +18,6 @@ Content-Type: application/json
     "ValorApuesta": 8500,
     //"NumeroApuesta":2,
     "ColorApuesta":1
-    //"ClienteId": 2
 }
 
 
@@ -33,4 +32,4 @@ Content-Type: application/json
 #     "Saldo": 15000
 # }
 
-# Get https://localhost:5001/Cliente/ObtenerClientes
+# Get http://localhost:8082/Cliente/ObtenerClientes
