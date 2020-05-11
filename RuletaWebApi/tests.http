@@ -1,13 +1,19 @@
 //APIS PARA Ruletas
-
+//Para consumir el api de creación de ruletas descomentarear esta función, se obtendrá el número de la ruleta creada si es exitosa la creación o un mensaje respectivo informandonos sobre un error
 #  POST http://localhost:8082/Ruleta/Crear
 
+//Para consumir el api de consulta de ruletas descomentarear esta función, se obtendrá el listado de todas las ruletas creadas hasta el momento con su respectivo estado
 # GET  http://localhost:8082/Ruleta/Obtener
 
+//Para deshabilitar la ruleta se debe de consumir este api, descomentarear la siguiente linea, se obtendrán los valores totales de las apuestas, cantidad de apuestas, fechas y id de la ruleta
 PUT   http://localhost:8082/Ruleta/DesHabilitar/1
 
+//Para habilitar la ruleta se debe de consumir este api, descomentarear la siguiente linea, se obtendrán un mensaje informandonos del estado de nuestra transaccion o proceso
 # PUT  http://localhost:8082/Ruleta/Habilitar/1
+
 //APIS PARA CREAR APUESTAS
+
+//Para crear una apuesta se debe de consumir este api, descomentarear la siguiente linea, se obtendrán un mensaje informandonos de si fue posible o no la apuesta
 
 POST http://localhost:8082/Apuesta/Crear
 idUsuario:1
@@ -23,6 +29,7 @@ Content-Type: application/json
 
 //APIS PARA Clientes
 
+//Para crear un usuario se debe de consumir este api, descomentarear la siguiente linea, se obtendrán el id del usuario creado
 # POST http://localhost:8082/Cliente/CrearCliente
 # Content-Type: application/json
 
@@ -32,4 +39,5 @@ Content-Type: application/json
 #     "Saldo": 15000
 # }
 
+//Para consultar los clientes registrados se debe de consumir este api, descomentarear la siguiente linea, se obtendrán el listado de los clientes registrados
 # Get http://localhost:8082/Cliente/ObtenerClientes
